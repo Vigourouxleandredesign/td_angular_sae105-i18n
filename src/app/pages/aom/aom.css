@@ -1,0 +1,72 @@
+.god-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+}
+
+.god-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.3rem;
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--aom);
+  width: 100%;
+}
+
+.god-card__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.god-card__pantheon {
+  margin: 0 0 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--aom);
+  text-align: left;
+}
+
+.god-card h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+.god-card__focus {
+  padding: 0.35rem 0.7rem;
+  border-radius: 8px;
+  background: #efe8f8;
+  color: var(--aom);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.god-card__desc {
+  margin: 0 0 0.75rem;
+  color: var(--ink-muted);
+  max-width: none;
+  width: 100%;
+  text-align: justify;
+  hyphens: none;
+}
+
+.god-card__bonus {
+  margin: 0;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--border);
+  color: var(--ink);
+  width: 100%;
+  text-align: justify;
+  hyphens: none;
+}

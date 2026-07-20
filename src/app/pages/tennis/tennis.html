@@ -1,0 +1,60 @@
+<section class="page tennis">
+  <a routerLink="/" class="back-link">← Retour à l’accueil</a>
+
+  <h1 class="page-title">Tennis</h1>
+
+  <div class="intro">
+    <p class="lead">
+      Du club à la <strong>compétition</strong>, avec une vraie préférence pour la
+      <strong>terre battue</strong>.
+    </p>
+    <p>
+      J’ai commencé le tennis vers <strong>12 ans</strong> et j’en ai fait jusqu’à
+      mes <strong>18 ans</strong> à l’<strong>AS 6ème</strong>. Ce n’était pas
+      seulement du loisir, puisque j’ai aussi joué en compétition avec un classement
+      autour de <strong>30/5</strong>. Ma préférence est très claire : le
+      <strong>simple sur terre battue</strong>. C’est sur cette surface que j’ai mes
+      meilleurs souvenirs, car le rythme y est différent, les échanges s’allongent et
+      l’on a le temps de construire les points.
+    </p>
+    <p>
+      Sur le court, j’avais souvent moins de force brute que mes adversaires, qui
+      étaient fréquemment des adultes. Je misais donc sur les <strong>effets</strong>
+      et le <strong>placement</strong>, afin de fatiguer l’autre en le faisant courir.
+      Cette approche est moins spectaculaire qu’un service canon, mais elle devient
+      très efficace dès qu’elle passe bien.
+    </p>
+  </div>
+
+  <section class="section">
+    <h2>Joueurs que j’admire</h2>
+    <p class="section-intro">
+      Cette liste est présentée sous forme de <strong>tableau</strong>, pour proposer
+      une mise en forme différente des cartes utilisées sur la page FPV.
+    </p>
+
+    <div class="table-wrap">
+      <table class="players-table">
+        <caption class="sr-only">Joueurs de tennis admirés</caption>
+        <thead>
+          <tr>
+            <th scope="col">Joueur</th>
+            <th scope="col">Période</th>
+            <th scope="col">Surface associée</th>
+            <th scope="col">Pourquoi</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (player of players; track player.name) {
+            <tr>
+              <th scope="row">{{ player.name }}</th>
+              <td>{{ player.period }}</td>
+              <td>{{ player.surface }}</td>
+              <td class="players-table__why" [innerHTML]="player.why"></td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+</section>

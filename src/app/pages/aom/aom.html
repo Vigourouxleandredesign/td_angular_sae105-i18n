@@ -1,0 +1,50 @@
+<section class="page aom">
+  <a routerLink="/" class="back-link">← Retour à l’accueil</a>
+
+  <h1 class="page-title">Age of Mythology</h1>
+
+  <div class="intro">
+    <p class="lead">
+      Un RTS où les <strong>dieux</strong>, les unités mythiques et la gestion
+      économique se croisent, avec parfois un <strong>rush</strong> bien placé.
+    </p>
+    <p>
+      Je joue à <strong>Age of Mythology</strong> depuis mes 12 ou 13 ans, aussi bien
+      sur l’original que sur le <strong>Retold</strong>. C’est un RTS à part, car il
+      mêle la gestion classique d’une base aux pouvoirs divins, ce qui donne à chaque
+      partie sa propre saveur. Mes civilisations préférées restent les
+      <strong>Nordiques</strong> et les <strong>Grecs</strong> : j’aime le feeling des
+      deux et je bascule de l’une à l’autre selon l’humeur.
+    </p>
+    <p>
+      Mon style de jeu est surtout <strong>éco et naval</strong>. Je construis, je
+      sécurise et je prends de l’espace, tout en gardant les bases pour jouer rush si
+      la partie l’exige. Côté dieux, j’accroche beaucoup à <strong>Hadès</strong> et
+      à <strong>Thor</strong>, surtout pour leurs bonus.
+    </p>
+  </div>
+
+  <section class="section">
+    <h2>Dieux et style de jeu</h2>
+    <p class="section-intro">
+      Cette sélection est présentée en <strong>fiches</strong>, dans l’esprit des
+      dieux et des unités du jeu.
+    </p>
+
+    <ul class="god-cards">
+      @for (god of gods; track god.name) {
+        <li class="god-card">
+          <header class="god-card__header">
+            <div>
+              <p class="god-card__pantheon">{{ god.pantheon }}</p>
+              <h3>{{ god.name }}</h3>
+            </div>
+            <span class="god-card__focus">{{ god.focus }}</span>
+          </header>
+          <p class="god-card__desc" [innerHTML]="god.description"></p>
+          <p class="god-card__bonus" [innerHTML]="god.bonus"></p>
+        </li>
+      }
+    </ul>
+  </section>
+</section>

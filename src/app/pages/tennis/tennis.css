@@ -1,0 +1,64 @@
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  width: 100%;
+}
+
+.players-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+}
+
+.players-table th,
+.players-table td {
+  padding: 0.95rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border);
+}
+
+.players-table thead th {
+  background: #f7ebe2;
+  color: var(--tennis);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.players-table tbody th {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.players-table tbody tr:last-child th,
+.players-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.players-table tbody tr:hover {
+  background: #fff8f2;
+}
+
+.players-table__why {
+  color: var(--ink-muted);
+  max-width: none;
+  width: 100%;
+  text-align: justify;
+  hyphens: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

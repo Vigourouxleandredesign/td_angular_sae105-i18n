@@ -1,0 +1,87 @@
+.intro {
+  padding: 0.25rem 0 0.5rem;
+}
+
+.interest-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+}
+
+.interest-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.35rem 1.4rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--accent);
+  width: 100%;
+}
+
+.interest-card[data-accent='fpv'] {
+  border-left-color: var(--fpv);
+}
+
+.interest-card[data-accent='tennis'] {
+  border-left-color: var(--tennis);
+}
+
+.interest-card[data-accent='aom'] {
+  border-left-color: var(--aom);
+}
+
+.interest-card__subtitle {
+  margin: 0 0 0.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-muted);
+  text-align: left;
+}
+
+.interest-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+.interest-card__text {
+  flex: 1;
+  min-width: min(100%, 280px);
+}
+
+.interest-card__text p:last-child {
+  margin: 0;
+  max-width: none;
+  width: 100%;
+  color: var(--ink-muted);
+  text-align: justify;
+  hyphens: none;
+}
+
+.interest-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 0.95rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.interest-card__link:hover {
+  filter: brightness(1.08);
+}

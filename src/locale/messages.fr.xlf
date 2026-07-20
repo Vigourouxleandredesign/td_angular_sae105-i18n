@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template" target-language="fr">
+    <body>
+      <trans-unit id="5491339715668996138" datatype="html">
+        <source> I am currently training to become a <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>web developer<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>, after a professional degree as a <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>graphic designer and web designer<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>. My goal is to grow into the role of <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>creative developer<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>, at the crossroads of code and visual creation. </source>
+        <target> Je suis actuellement en formation pour devenir <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>développeur web<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>, après un diplôme professionnel d’<x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>infographiste-webdesigner<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>. Mon objectif est d’évoluer vers le métier de <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>creative developer<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>, à la croisée du code et de la création visuelle. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.html</context>
+          <context context-type="linenumber">6,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2643619752875482378" datatype="html">
+        <source> Beyond the web, I have always kept several passions going at the same time. This site presents three of them, deliberately different, to illustrate the <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>variety<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> of my interests. You will find <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>FPV flying<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>, <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>tennis<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> and <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Age of Mythology<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>, in other words a bit of tech, a bit of sport and a bit of strategy. Choose a topic below to learn more. </source>
+        <target> Au-delà du web, j’ai toujours cultivé plusieurs passions en parallèle. Ce site en présente trois, volontairement différentes, afin d’illustrer la <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>variété<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> de mes centres d’intérêts. On y trouve du <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>pilotage FPV<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>, du <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>tennis<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> et <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Age of Mythology<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>, autrement dit un peu de tech, un peu de sport et un peu de stratégie. Choisissez un thème ci-dessous pour en savoir plus. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.html</context>
+          <context context-type="linenumber">12,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2166207354147462360" datatype="html">
+        <source>My interests</source>
+        <target>Mes centres d’intérêts</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7627544798203088407" datatype="html">
+        <source>Discover</source>
+        <target>Découvrir</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

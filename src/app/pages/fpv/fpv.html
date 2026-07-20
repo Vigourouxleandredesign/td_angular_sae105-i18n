@@ -1,0 +1,57 @@
+<section class="page fpv">
+  <a routerLink="/" class="back-link">← Retour à l’accueil</a>
+
+  <h1 class="page-title">Pilotage de drones FPV</h1>
+
+  <div class="intro">
+    <p class="lead">
+      Une discipline où la <strong>course</strong> et l’<strong>acrobatie</strong>
+      se rejoignent, avec quelques minutes d’adrénaline à chaque batterie.
+    </p>
+    <p>
+      Je pratique le <strong>FPV</strong> depuis mes <strong>13 ans</strong>.
+      C’est mon oncle qui m’a mis le pied à l’étrier, après m’avoir déjà initié à
+      d’autres activités de précision, et le drone est vite devenu une évidence.
+      Depuis, je vole aussi bien en <strong>indoor</strong> qu’en
+      <strong>outdoor</strong>. J’ai enchaîné courses et acrobatie en loisir,
+      sans jamais passer par la compétition officielle, et l’adrénaline reste
+      pourtant bien présente. Enchaîner des figures ou attaquer une ligne de course
+      demande une vraie <strong>concentration</strong>.
+    </p>
+    <p>
+      Côté matériel, je pilote avec une radio <strong>Taranis</strong> et plusieurs
+      drones selon le contexte. Les batteries de ce type de machine ne tiennent
+      souvent pas plus de <strong>5 minutes</strong> par run, ce qui suffit
+      largement pour sortir essoré de la session.
+    </p>
+  </div>
+
+  <section class="section">
+    <h2>Mes drones</h2>
+    <p class="section-intro">
+      Voici une sélection de mon setup, présentée sous forme de
+      <strong>cartes</strong>, avec l’usage et les points forts de chaque machine.
+    </p>
+
+    <ul class="drone-cards">
+      @for (drone of drones; track drone.name) {
+        <li class="drone-card">
+          <div class="drone-card__visual" aria-hidden="true">
+            <span class="drone-card__icon">◈</span>
+          </div>
+          <div class="drone-card__body">
+            <p class="drone-card__usage">{{ drone.usage }}</p>
+            <h3>{{ drone.name }}</h3>
+            <p class="drone-card__type">{{ drone.type }}</p>
+            <p class="drone-card__desc" [innerHTML]="drone.description"></p>
+            <ul class="drone-card__traits">
+              @for (trait of drone.traits; track trait) {
+                <li>{{ trait }}</li>
+              }
+            </ul>
+          </div>
+        </li>
+      }
+    </ul>
+  </section>
+</section>

@@ -12,6 +12,19 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "fr": {
+            "translation": "src/locale/messages.fr.xlf",
+            "baseHref": ""
+          },
+          "es": {
+            "translation": "src/locale/messages.es.xlf",
+            "baseHref": ""
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular/build:application",
@@ -24,9 +37,8 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ]
+            "styles": ["src/styles.css"],
+            "polyfills": ["@angular/localize/init"]
           },
           "configurations": {
             "production": {
@@ -44,6 +56,16 @@
               ],
               "outputHashing": "all"
             },
+            "fr": {
+              "localize": ["fr"],
+              "outputPath": "dist/site-fr/",
+              "i18nMissingTranslation": "error"
+            },
+            "es": {
+              "localize": ["es"],
+              "outputPath": "dist/site-es/",
+              "i18nMissingTranslation": "error"
+            },
             "development": {
               "optimization": false,
               "extractLicenses": false,
@@ -57,6 +79,12 @@
           "configurations": {
             "production": {
               "buildTarget": "td_sae_leandre:build:production"
+            },
+            "fr": {
+              "buildTarget": "td_sae_leandre:build:development,fr"
+            },
+            "es": {
+              "buildTarget": "td_sae_leandre:build:development,es"
             },
             "development": {
               "buildTarget": "td_sae_leandre:build:development"
