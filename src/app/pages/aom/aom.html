@@ -3,6 +3,18 @@
 
   <h1 class="page-title">Age of Mythology</h1>
 
+  <figure class="page-hero page-hero--cover">
+    <img
+      src="/images/aom/Aom_hero.webp"
+      alt="Jaquette Age of Mythology (version originale)"
+      width="600"
+      height="900"
+    />
+    <figcaption>
+      Pochette <strong>Age of Mythology</strong> (première version).
+    </figcaption>
+  </figure>
+
   <div class="intro">
     <p class="lead">
       Un RTS où les <strong>dieux</strong>, les unités mythiques et la gestion
@@ -27,13 +39,21 @@
   <section class="section">
     <h2>Dieux et style de jeu</h2>
     <p class="section-intro">
-      Cette sélection est présentée en <strong>fiches</strong>, dans l’esprit des
-      dieux et des unités du jeu.
+      Cette sélection est présentée en <strong>fiches</strong>, avec les
+      <strong>portraits</strong> des dieux dans le style de la première version
+      du jeu.
     </p>
 
     <ul class="god-cards">
       @for (god of gods; track god.name) {
         <li class="god-card">
+          <img
+            class="god-card__image"
+            [src]="god.image"
+            [alt]="god.imageAlt"
+            width="900"
+            height="500"
+          />
           <header class="god-card__header">
             <div>
               <p class="god-card__pantheon">{{ god.pantheon }}</p>

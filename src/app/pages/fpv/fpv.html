@@ -36,9 +36,13 @@
     <ul class="drone-cards">
       @for (drone of drones; track drone.name) {
         <li class="drone-card">
-          <div class="drone-card__visual" aria-hidden="true">
-            <span class="drone-card__icon">◈</span>
-          </div>
+          <img
+            class="drone-card__image"
+            [src]="drone.image"
+            [alt]="drone.imageAlt"
+            width="800"
+            height="500"
+          />
           <div class="drone-card__body">
             <p class="drone-card__usage">{{ drone.usage }}</p>
             <h3>{{ drone.name }}</h3>

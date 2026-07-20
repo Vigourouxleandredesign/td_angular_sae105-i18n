@@ -8,6 +8,24 @@ import { RouterLink } from '@angular/router';
   styleUrl: './tennis.css'
 })
 export class Tennis {
+  readonly gallery = [
+    {
+      src: '/images/tennis/terre-battue.jpg',
+      alt: 'Court de tennis en terre battue',
+      caption: 'Terre battue — la surface de mes meilleurs souvenirs'
+    },
+    {
+      src: '/images/tennis/raquette.jpg',
+      alt: 'Raquette et balle de tennis',
+      caption: 'Raquette et placement plutôt que la force brute'
+    },
+    {
+      src: '/images/tennis/court.jpg',
+      alt: 'Joueuse en action sur terre battue, ambiance compétition type Roland-Garros',
+      caption: 'Compétition sur terre battue — ambiance Roland-Garros'
+    }
+  ];
+
   readonly players = [
     {
       name: 'Rafael Nadal',
